@@ -420,6 +420,49 @@
 </tr>
 </tbody></table>
 
+<!-- wang2015global -->
+<table width="100%" align="center" border="0" cellspacing="0" cellpadding="15"><tbody>
+<tr onmouseout="tip_seg_stop()" onmouseover="tip_seg_start()">
+
+    <td width="30%" valign="center" align="center">
+        <div class="image_mouseout">
+            <div class="image_mouseover" id="tip_res_image" style="opacity: 0;">
+                <img src="images/tip_seg_1.png" ,="" width="100%">
+            </div>
+            <div class="image_constant" id="tip_image" style="opacity: 1;">
+                <img src="images/tip_seg.png" ,="" width="100%">
+            </div>
+        </div>
+        <script type="text/javascript">
+            function tip_seg_start() {
+                document.getElementById('tip_image').style.opacity = "0";
+                document.getElementById('tip_res_image').style.opacity = "1";
+            }
+
+            function tip_seg_stop() {
+                document.getElementById('tip_res_image').style.opacity = "0";
+                document.getElementById('tip_image').style.opacity = "1";
+            }
+            tip_seg_stop()
+        </script>
+    </td>
+
+    <td width="70%" valign="top">
+        <p>
+            <a href="https://ieeexplore.ieee.org/document/7024152" id="wang2015global">
+                <heading>A global/local affinity graph for image segmentation</heading>
+            </a><br>
+            Xiaofang Wang, <b>Yuxing Tang</b>, Simon Masnou, Liming Chen<br>
+            <i>IEEE Transactions on Image Processing (<b>TIP</b>), 2015. </i><br>
+          | <a href="data/wang2015global.bib">BibTeX</a> | <a href="https://www.researchgate.net/publication/271772745_A_GlobalLocal_Affinity_Graph_for_Image_Segmentation">PDF</a> | <a href="https://github.com/xiaofanglegoc/global-local-affinity-graph">Code</a> |
+        </p>
+        <p>
+            A sparse global/local affinity graph over superpixels of an input image to capture both short and long range grouping cues.
+    </td>
+
+</tr>
+</tbody></table>
+
 <table width="100%" align="center" border="0" cellspacing="0" cellpadding="10">
   <tbody><tr><td><heading>&nbsp;&nbsp;<p id="conf_pub"><li>Conferences</li></p></heading></td></tr></tbody>
 </table>
@@ -453,12 +496,12 @@
 
     <td width="70%" valign="top">
         <p>
-            <a href="https://openaccess.thecvf.com/content/CVPR2021/papers/Tang_Leveraging_Large-Scale_Weakly_Labeled_Data_for_Semi-Supervised_Mass_Detection_in_CVPR_2021_paper.pdf" id="tang2017weakly">
+            <a href="https://openaccess.thecvf.com/content/CVPR2021/papers/Tang_Leveraging_Large-Scale_Weakly_Labeled_Data_for_Semi-Supervised_Mass_Detection_in_CVPR_2021_paper.pdf" id="tang2021leveraging">
                 <heading>Leveraging large-scale weakly labeled data for semi-supervised mass detection in mammograms</heading>
             </a><br>
             <b>Yuxing Tang</b>, Zhenjie Cao, Yanbo Zhang, Zhicheng Yang, Zongcheng Ji, Yiwei Wang, Mei Han, Jie Ma, Jing Xiao, Peng Chang<br>
             <i>IEEE/CVF Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>), 2021. </i><br>
-          | <a href="data/tang2017weakly.bib">BibTeX</a> | <a href="https://openaccess.thecvf.com/content/CVPR2021/supplemental/Tang_Leveraging_Large-Scale_Weakly_CVPR_2021_supplemental.pdf">Supp</a> |
+          | <a href="data/tang2021leveraging.bib">BibTeX</a> | <a href="https://openaccess.thecvf.com/content/CVPR2021/supplemental/Tang_Leveraging_Large-Scale_Weakly_CVPR_2021_supplemental.pdf">Supp</a> |
         </p>
         <p>
             A novel self-training framework for semi-supervised mass detection with soft image-level labels generated from diagnosis reports by a RoBERTa-based NLP model.
@@ -534,6 +577,49 @@
         </p>
         <p>
             A framework of supervised contrastive pre-training followed by supervised fine-tuning to improve mammographic triage screening models.
+    </td>
+
+</tr>
+</tbody></table>
+
+<!-- tang2020net -->
+<table width="100%" align="center" border="0" cellspacing="0" cellpadding="15"><tbody>
+<tr onmouseout="miccai21_e2net_stop()" onmouseover="miccai21_e2net_start()">
+
+    <td width="30%" valign="center" align="center">
+        <div class="image_mouseout">
+            <div class="image_mouseover" id="miccai21_e2net_res_image" style="opacity: 0;">
+                <img src="images/miccai21_e2net_1.png" ,="" width="100%">
+            </div>
+            <div class="image_constant" id="miccai21_e2net_image" style="opacity: 1;">
+                <img src="images/miccai21_e2net.png" ,="" width="100%">
+            </div>
+        </div>
+        <script type="text/javascript">
+            function miccai21_e2net_start() {
+                document.getElementById('miccai21_e2net_image').style.opacity = "0";
+                document.getElementById('miccai21_e2net_res_image').style.opacity = "1";
+            }
+
+            function miccai21_e2net_stop() {
+                document.getElementById('miccai21_e2net_res_image').style.opacity = "0";
+                document.getElementById('miccai21_e2net_image').style.opacity = "1";
+            }
+            miccai21_e2net_stop()
+        </script>
+    </td>
+
+    <td width="70%" valign="top">
+        <p>
+            <a href="https://link.springer.com/chapter/10.1007/978-3-030-59719-1_50" id="tang2020net">
+                <heading>E&#178;Net: An edge enhanced network for accurate liver and tumor segmentation on CT scans</heading>
+            </a><br>
+            Youbao Tang, <b>Yuxing Tang</b>, Yingying Zhu, Jing Xiao, Ronald M. Summers<br>
+            <i>International Conference on Medical Image Computing and Computer Assisted Intervention (<b>MICCAI</b>), 2020. </i><br>
+          | <a href="data/tang2020net.bib">BibTeX</a> | <a href="https://arxiv.org/pdf/2007.09791.pdf">arXiv</a> |
+        </p>
+        <p>
+            A two-stage framework (edge enhanced network) for 2D liver and tumor segmentation on CT scans.
     </td>
 
 </tr>

@@ -27,14 +27,27 @@
   white-space: nowrap;
 }
 
-/* The source portrait is a 2:3 crop, which renders half again as tall as the
-   theme's column and leaves a void beside the bio. Frame it square like the
-   theme expects, biased upward so the face keeps its headroom. */
-.profile img {
-  aspect-ratio: 1 / 1;
-  height: auto;
-  object-fit: cover;
-  object-position: 50% 10%;
+/* The source portrait is 2:3, so at the theme's default 30% column it renders
+   taller than the bio beside it. Narrow the column instead, which scales the
+   whole photo down without cropping any of it. */
+@media (min-width: 576px) {
+  .profile {
+    width: 22%;
+  }
+}
+
+/* Below that breakpoint the theme gives the column the full width, which makes
+   a 2:3 photo fill most of the first screen. Hold the image back instead. */
+@media (max-width: 575.98px) {
+  .profile img {
+    max-width: 60%;
+  }
+}
+
+/* The contact lines share the narrowed column, so ease the monospace size to
+   keep them off a third line. */
+.profile .more-info {
+  font-size: 0.85rem;
 }
 
 /* Publication titles are links here rather than plain text, so keep them the

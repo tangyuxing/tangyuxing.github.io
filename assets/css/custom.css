@@ -1,0 +1,39 @@
+/*******************************************************************************
+ * Additions on top of the theme stylesheet.
+ ******************************************************************************/
+
+/* Publication previews that cross-fade to a second image on hover. The overlay
+   ignores pointer events so clicks still reach the zoomable base image. */
+.preview-swap {
+  position: relative;
+}
+
+.preview-swap .preview-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.preview-swap:hover .preview-hover {
+  opacity: 1;
+}
+
+/* The news table keeps its own left column width, so stop the date cells from
+   wrapping mid-label. */
+.news th {
+  white-space: nowrap;
+}
+
+/* Publication titles are links here rather than plain text, so keep them the
+   body colour and let them pick up the accent on hover. */
+.publications ol.bibliography li .title a {
+  color: var(--global-text-color);
+}
+
+.publications ol.bibliography li .title a:hover {
+  color: var(--global-theme-color);
+  text-decoration: none;
+}

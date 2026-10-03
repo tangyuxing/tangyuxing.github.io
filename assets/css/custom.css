@@ -27,6 +27,16 @@
   white-space: nowrap;
 }
 
+/* The source portrait is a 2:3 crop, which renders half again as tall as the
+   theme's column and leaves a void beside the bio. Frame it square like the
+   theme expects, biased upward so the face keeps its headroom. */
+.profile img {
+  aspect-ratio: 1 / 1;
+  height: auto;
+  object-fit: cover;
+  object-position: 50% 10%;
+}
+
 /* Publication titles are links here rather than plain text, so keep them the
    body colour and let them pick up the accent on hover. */
 .publications ol.bibliography li .title a {
